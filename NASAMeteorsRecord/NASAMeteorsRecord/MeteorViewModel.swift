@@ -14,6 +14,7 @@ struct MeteorViewModel {
     let year: String?
     let location: [Double]?
     let date: Date?
+    var isFavourite: Bool = false
 
     // Dependancy Injection
 
