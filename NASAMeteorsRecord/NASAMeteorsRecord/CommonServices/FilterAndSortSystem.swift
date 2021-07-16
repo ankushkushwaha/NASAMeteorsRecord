@@ -15,7 +15,7 @@ class FilterAndSortSystem {
         case SortByName = "Sort By Name"
         case SortByYear = "Sort By Year"
         case SortByMass = "Sort By Mass"
-        case ShowOnlyMeteorsFrom1900 = "Show Only Meteors From 1900"
+        case ShowOnlyMeteorsFrom1900 = "Filter Meteors From year 1900"
         case ShowFavouriteMeteores = "Show Favourite Meteors"
     }
 
