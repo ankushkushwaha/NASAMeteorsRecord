@@ -25,7 +25,6 @@ struct MeteorViewModel {
         year = model.year?.dateDisplayString
         date = model.year
         location = model.geolocation?.coordinates
-
     }
 
 }

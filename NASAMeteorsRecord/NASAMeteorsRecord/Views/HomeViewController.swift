@@ -52,7 +52,7 @@ class HomeViewController: UIViewController {
     private func setNavigationBar() {
 
         let rightBarButton = UIBarButtonItem(title: "Filters", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.openFilters(_:)))
-            self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = rightBarButton
 
         self.title = "Meteors List"
     }
@@ -72,8 +72,8 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
 
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-         refreshControl.addTarget(self, action: #selector(self.refreshData(_:)), for: .valueChanged)
-         tableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(self.refreshData(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
 
     }
 
@@ -81,17 +81,38 @@ class HomeViewController: UIViewController {
 
         filterSystem.currentFilterType = .ShowAll
 
-        NetworkService().fetchMeteorsData { [unowned self] (meteorModelArray, error) in
+        NetworkService().fetchMeteorsData { [weak self] (meteorModelArray, error) in
 
-            self.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
+            self?.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
 
-            self.meteorsData = allMeteorsViewModel // no filters at this stage
-
+            self?.meteorsData = self?.assignFavouriteStatusToViewModels(viewModels: self?.allMeteorsViewModel ?? []) // no filters at this stage
+            
             DispatchQueue.main.async {
-                self.tableView.reloadData()
-                refreshControl.endRefreshing()
+                self?.tableView.reloadData()
+                self?.refreshControl.endRefreshing()
             }
         }
+    }
+
+    private func assignFavouriteStatusToViewModels(viewModels: [MeteorViewModel]) -> [MeteorViewModel]? {
+
+        guard let favouriteIds = UserDefaultsManager().getFavourites() else {
+            return viewModels
+        }
+
+        let vms = viewModels.map { viewmodel -> MeteorViewModel in
+
+            var mutableVM = viewmodel
+            if favouriteIds.contains(mutableVM.id) {
+
+                mutableVM.isFavourite = true
+            } else {
+                mutableVM.isFavourite = false
+            }
+            return mutableVM
+        }
+
+        return vms
     }
 
     deinit {
@@ -112,6 +133,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.model = meteorsData?[indexPath.row]
             cell.accessoryType = .disclosureIndicator
 
+            cell.delegate = self
             return cell
         }
 
@@ -119,7 +141,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
 
         if let coordinates = meteorsData?[indexPath.row].location,
            let lat = coordinates.last,
@@ -140,5 +161,24 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
 
         }
+    }
+}
+
+
+extension HomeViewController: MeteorTableViewCellDelegate {
+
+    func favouriteButtonClicked(model: MeteorViewModel) {
+
+        if model.isFavourite {
+            UserDefaultsManager().removeFromFavourite(id: model.id)
+        } else {
+
+            UserDefaultsManager().setFavourite(id: model.id)
+        }
+
+        // refresh tableview data 
+        self.meteorsData = self.assignFavouriteStatusToViewModels(viewModels: allMeteorsViewModel)
+
+        tableView.reloadData()
     }
 }

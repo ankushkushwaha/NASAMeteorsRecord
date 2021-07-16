@@ -34,6 +34,8 @@ class FilterViewController: UIViewController {
     }
 
 }
+
+
 extension FilterViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
