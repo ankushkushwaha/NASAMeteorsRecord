@@ -23,8 +23,8 @@ class MeteorTableViewCell: UITableViewCell {
     var model: MeteorViewModel! {
         didSet {
             nameLabel.text = model.name ?? "-"
-            massLabel.text = model.mass ?? "Mass is not available in API"
-            yearLabel.text = model.year ?? "-"
+            massLabel.text = "Mass: \(model.mass ?? "not available in Json")"
+            yearLabel.text = "Year: \(model.year ?? "-")"
 
             if model.isFavourite {
                 favouriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
