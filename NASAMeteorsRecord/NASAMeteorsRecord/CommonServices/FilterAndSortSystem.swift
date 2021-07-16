@@ -16,6 +16,7 @@ class FilterAndSortSystem {
         case SortByYear = "Sort By Year"
         case SortByMass = "Sort By Mass"
         case ShowOnlyMeteorsFrom1900 = "Show Only Meteors From 1900"
+        case ShowFavouriteMeteores = "Show Favourite Meteors"
     }
 
     var currentFilterType : FilterOptionType! {
@@ -76,6 +77,11 @@ class FilterAndSortSystem {
 
             return meteors
 
+        case .ShowFavouriteMeteores:
+            let meteors = meteors.filter { m in
+                 return m.isFavourite == true
+            }
+            return meteors
         }
     }
 }

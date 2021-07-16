@@ -17,7 +17,8 @@ class FilterViewController: UIViewController {
                        FilterAndSortSystem.FilterOptionType.SortByYear,
                        FilterAndSortSystem.FilterOptionType.SortByName,
                        FilterAndSortSystem.FilterOptionType.SortByMass,
-                       FilterAndSortSystem.FilterOptionType.ShowOnlyMeteorsFrom1900
+                       FilterAndSortSystem.FilterOptionType.ShowOnlyMeteorsFrom1900,
+                       FilterAndSortSystem.FilterOptionType.ShowFavouriteMeteores
     ]
 
     override func viewDidLoad() {

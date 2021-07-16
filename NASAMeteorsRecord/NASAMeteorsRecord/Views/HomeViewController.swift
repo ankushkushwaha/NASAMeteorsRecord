@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
 
     private let refreshControl = UIRefreshControl()
 
-    private var meteorsData: [MeteorViewModel]? = [] // to show in table view
+    private var modifiedMeteorsData: [MeteorViewModel]? = [] // to show in table view
 
     private var allMeteorsViewModel: [MeteorViewModel] = [] // for cache
 
@@ -38,16 +38,8 @@ class HomeViewController: UIViewController {
 
     @objc func applyFilter(_ sender: AnyObject?) {
 
-        guard let sortType = filterSystem.currentFilterType else {
-            return
-        }
-        self.meteorsData = FilterAndSortSystem().sort(meteors: allMeteorsViewModel, sortType: sortType )
-
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        refreshTableViewUI()
     }
-
 
     private func setNavigationBar() {
 
@@ -79,18 +71,39 @@ class HomeViewController: UIViewController {
 
     @objc func refreshData(_ sender: AnyObject?) {
 
-        filterSystem.currentFilterType = .ShowAll
-
         NetworkService().fetchMeteorsData { [weak self] (meteorModelArray, error) in
 
             self?.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
 
-            self?.meteorsData = self?.assignFavouriteStatusToViewModels(viewModels: self?.allMeteorsViewModel ?? []) // no filters at this stage
-            
             DispatchQueue.main.async {
-                self?.tableView.reloadData()
+
+                self?.refreshTableViewUI()
+
                 self?.refreshControl.endRefreshing()
             }
+        }
+    }
+
+    private func refreshTableViewUI() {
+
+        guard let sortType = filterSystem.currentFilterType else {
+            return
+        }
+        DispatchQueue.main.async {
+
+            // STEP 1: apply favourite modification on data
+
+            let dataWithFavouriteStatus = self.assignFavouriteStatusToViewModels(viewModels: self.allMeteorsViewModel)
+
+
+            // STEP 2:  apply sorting/filter on data
+
+            let sortedDataWithFavouriteStatus = FilterAndSortSystem().sort(meteors: dataWithFavouriteStatus ?? [], sortType: sortType )
+
+            self.modifiedMeteorsData = sortedDataWithFavouriteStatus
+
+            // STEP 3: Refresh UI
+            self.tableView.reloadData()
         }
     }
 
@@ -123,14 +136,14 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return meteorsData?.count ?? 0
+        return modifiedMeteorsData?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MeteorTableViewCell") as? MeteorTableViewCell {
 
-            cell.model = meteorsData?[indexPath.row]
+            cell.model = modifiedMeteorsData?[indexPath.row]
             cell.accessoryType = .disclosureIndicator
 
             cell.delegate = self
@@ -142,7 +155,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        if let coordinates = meteorsData?[indexPath.row].location,
+        if let coordinates = modifiedMeteorsData?[indexPath.row].location,
            let lat = coordinates.last,
            let long = coordinates.first {
             let centerCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
@@ -150,7 +163,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             if (CLLocationCoordinate2DIsValid(centerCoordinate)) {
 
                 let vc = MapViewController()
-                vc.meteorViewModel = meteorsData?[indexPath.row]
+                vc.meteorViewModel = modifiedMeteorsData?[indexPath.row]
                 self.navigationController?.pushViewController(vc, animated: true)
 
             } else {
@@ -176,9 +189,6 @@ extension HomeViewController: MeteorTableViewCellDelegate {
             UserDefaultsManager().setFavourite(id: model.id)
         }
 
-        // refresh tableview data 
-        self.meteorsData = self.assignFavouriteStatusToViewModels(viewModels: allMeteorsViewModel)
-
-        tableView.reloadData()
+        refreshTableViewUI()
     }
 }
