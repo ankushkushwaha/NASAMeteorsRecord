@@ -6,6 +6,10 @@
 //
 
 import Foundation
+
 extension Notification.Name {
+
     static let didUpdateFilter = Notification.Name("didUpdateFilter")
+
+    // add more notification names here
 }

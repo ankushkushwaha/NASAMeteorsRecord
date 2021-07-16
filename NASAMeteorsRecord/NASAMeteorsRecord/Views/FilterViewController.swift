@@ -31,7 +31,7 @@ class FilterViewController: UIViewController {
     }
 
     deinit {
-        print("deFilterViewController deinit")
+        print("deinit FilterViewController")
     }
 
 }
