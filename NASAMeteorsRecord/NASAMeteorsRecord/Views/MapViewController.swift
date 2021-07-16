@@ -17,6 +17,8 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let zoomLevel = CLLocationDistance(900000) //adjust zoom level of map here
+
         if let coordinates = meteorViewModel?.location,
            let lat = coordinates.last,
            let long = coordinates.first {
@@ -25,6 +27,8 @@ class MapViewController: UIViewController {
                 let centerCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
 
             annotation.coordinate = centerCoordinate
+
+            let region = MKCoordinateRegion(center: centerCoordinate, latitudinalMeters: zoomLevel, longitudinalMeters: zoomLevel)
 
             var detailText = ""
             if let name = meteorViewModel?.name {
@@ -44,8 +48,13 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
 
             mapView.setCenter(centerCoordinate, animated: true)
+
+            mapView.setRegion(region, animated: true)
+
         }
 
     }
+
+
 
 }
