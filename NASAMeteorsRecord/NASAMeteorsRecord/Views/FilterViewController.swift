@@ -13,7 +13,7 @@ class FilterViewController: UIViewController {
 
     weak var filterSystem :FilterAndSortSystem?
 
-    let optionArray = [FilterAndSortSystem.FilterOptionType.ShowAll,
+    private let optionArray = [FilterAndSortSystem.FilterOptionType.ShowAll,
                        FilterAndSortSystem.FilterOptionType.SortByYear,
                        FilterAndSortSystem.FilterOptionType.SortByName,
                        FilterAndSortSystem.FilterOptionType.SortByMass,

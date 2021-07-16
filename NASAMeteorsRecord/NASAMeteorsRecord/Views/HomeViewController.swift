@@ -41,32 +41,18 @@ class HomeViewController: UIViewController {
         refreshTableViewUI()
     }
 
-    private func setNavigationBar() {
-
-        let rightBarButton = UIBarButtonItem(title: "Filters", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.openFilters(_:)))
-        self.navigationItem.rightBarButtonItem = rightBarButton
-
-        self.title = "Meteors List"
-    }
-
     @objc func openFilters(_ sender: AnyObject?) {
         let vc = FilterViewController()
         vc.filterSystem = filterSystem
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
-    private func setupTableView() {
-        tableView.register(UINib(nibName: MeteorTableViewCell.nibName(),
-                                 bundle: nil),
-                           forCellReuseIdentifier: "MeteorTableViewCell")
+    private func setNavigationBar() {
 
-        tableView.delegate = self
-        tableView.dataSource = self
+        let rightBarButton = UIBarButtonItem(title: "Filters", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.openFilters(_:)))
+        self.navigationItem.rightBarButtonItem = rightBarButton
 
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refreshControl.addTarget(self, action: #selector(self.refreshData(_:)), for: .valueChanged)
-        tableView.addSubview(refreshControl)
-
+        self.title = "Meteors List"
     }
 
     @objc func refreshData(_ sender: AnyObject?) {
@@ -82,6 +68,20 @@ class HomeViewController: UIViewController {
                 self?.refreshControl.endRefreshing()
             }
         }
+    }
+
+    private func setupTableView() {
+        tableView.register(UINib(nibName: MeteorTableViewCell.nibName(),
+                                 bundle: nil),
+                           forCellReuseIdentifier: "MeteorTableViewCell")
+
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refreshData(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+
     }
 
     private func refreshTableViewUI() {
