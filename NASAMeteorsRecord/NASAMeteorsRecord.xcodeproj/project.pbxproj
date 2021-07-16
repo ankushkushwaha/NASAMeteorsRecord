@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBB234126A18B5000C2AA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234026A18B5000C2AA21 /* AppDelegate.swift */; };
+		ACBB234526A18B5000C2AA21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234426A18B5000C2AA21 /* HomeViewController.swift */; };
+		ACBB234826A18B5000C2AA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234626A18B5000C2AA21 /* Main.storyboard */; };
+		ACBB234A26A18B5100C2AA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234926A18B5100C2AA21 /* Assets.xcassets */; };
+		ACBB234D26A18B5100C2AA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */; };
+		ACBB235826A18B5100C2AA21 /* NASAMeteorsRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */; };
+		ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */; };
+		ACBB237E26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
+		ACBB237F26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
+		ACBB238026A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
+		ACBB238526A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
+		ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
+		ACBB238726A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
+		ACBB239626A196BF00C2AA21 /* MeteorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239426A196BF00C2AA21 /* MeteorTableViewCell.swift */; };
+		ACBB239926A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
+		ACBB239A26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
+		ACBB239B26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
+		ACBB23A026A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
+		ACBB23A126A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
+		ACBB23A226A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
+		ACBB23A726A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
+		ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
+		ACBB23A926A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
+		ACBB23B526A1A1BC00C2AA21 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
+		ACBB23BC26A1A84700C2AA21 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = ACBB23BB26A1A84700C2AA21 /* MockData.json */; };
+		ACF0B6D826A1B5FA009FD283 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6D626A1B5FA009FD283 /* MapViewController.swift */; };
+		ACF0B6D926A1B5FA009FD283 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B6D726A1B5FA009FD283 /* MapViewController.xib */; };
+		ACF0B6E226A1C304009FD283 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6E026A1C304009FD283 /* FilterViewController.swift */; };
+		ACF0B6E326A1C304009FD283 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF0B6E126A1C304009FD283 /* FilterViewController.xib */; };
+		ACF0B6EB26A1C985009FD283 /* FilterAndSortSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6EA26A1C985009FD283 /* FilterAndSortSystem.swift */; };
+		ACF0B6F326A1CD95009FD283 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBB235426A18B5100C2AA21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBB233526A18B4F00C2AA21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBB233C26A18B4F00C2AA21;
+			remoteInfo = NASAMeteorsRecord;
+		};
+		ACBB235F26A18B5100C2AA21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBB233526A18B4F00C2AA21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBB233C26A18B4F00C2AA21;
+			remoteInfo = NASAMeteorsRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAMeteorsRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB234026A18B5000C2AA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBB234426A18B5000C2AA21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ACBB234726A18B5000C2AA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACBB234926A18B5100C2AA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBB234C26A18B5100C2AA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACBB234E26A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsRecordTests.swift; sourceTree = "<group>"; };
+		ACBB235926A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsRecordUITests.swift; sourceTree = "<group>"; };
+		ACBB236426A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBB237D26A18DD200C2AA21 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ACBB238426A18F6200C2AA21 /* MeteorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorModel.swift; sourceTree = "<group>"; };
+		ACBB239426A196BF00C2AA21 /* MeteorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorTableViewCell.swift; sourceTree = "<group>"; };
+		ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeteorTableViewCell.xib; sourceTree = "<group>"; };
+		ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorViewModel.swift; sourceTree = "<group>"; };
+		ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		ACBB23BB26A1A84700C2AA21 /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		ACF0B6D626A1B5FA009FD283 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ACF0B6D726A1B5FA009FD283 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		ACF0B6E026A1C304009FD283 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		ACF0B6E126A1C304009FD283 /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		ACF0B6EA26A1C985009FD283 /* FilterAndSortSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAndSortSystem.swift; sourceTree = "<group>"; };
+		ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBB233A26A18B4F00C2AA21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB235026A18B5100C2AA21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB235B26A18B5100C2AA21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC8A784626A1E5FE00C6F507 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB238426A18F6200C2AA21 /* MeteorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC8A784726A1E61500C6F507 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB234626A18B5000C2AA21 /* Main.storyboard */,
+				ACBB234426A18B5000C2AA21 /* HomeViewController.swift */,
+				ACF0B6D626A1B5FA009FD283 /* MapViewController.swift */,
+				ACF0B6D726A1B5FA009FD283 /* MapViewController.xib */,
+				ACF0B6E026A1C304009FD283 /* FilterViewController.swift */,
+				ACF0B6E126A1C304009FD283 /* FilterViewController.xib */,
+				ACBB239426A196BF00C2AA21 /* MeteorTableViewCell.swift */,
+				ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC8A784826A1E65100C6F507 /* CommonServices */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB237D26A18DD200C2AA21 /* NetworkService.swift */,
+				ACF0B6EA26A1C985009FD283 /* FilterAndSortSystem.swift */,
+			);
+			path = CommonServices;
+			sourceTree = "<group>";
+		};
+		AC8A784926A1E67D00C6F507 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */,
+				ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACBB233426A18B4F00C2AA21 = {
+			isa = PBXGroup;
+			children = (
+				ACBB233F26A18B5000C2AA21 /* NASAMeteorsRecord */,
+				ACBB235626A18B5100C2AA21 /* NASAMeteorsRecordTests */,
+				ACBB236126A18B5100C2AA21 /* NASAMeteorsRecordUITests */,
+				ACBB233E26A18B5000C2AA21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBB233E26A18B5000C2AA21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */,
+				ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */,
+				ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBB233F26A18B5000C2AA21 /* NASAMeteorsRecord */ = {
+			isa = PBXGroup;
+			children = (
+				AC8A784826A1E65100C6F507 /* CommonServices */,
+				AC8A784726A1E61500C6F507 /* Views */,
+				AC8A784626A1E5FE00C6F507 /* Models */,
+				ACBB234026A18B5000C2AA21 /* AppDelegate.swift */,
+				ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */,
+				ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */,
+				AC8A784926A1E67D00C6F507 /* Extensions */,
+				ACBB234926A18B5100C2AA21 /* Assets.xcassets */,
+				ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */,
+				ACBB234E26A18B5100C2AA21 /* Info.plist */,
+			);
+			path = NASAMeteorsRecord;
+			sourceTree = "<group>";
+		};
+		ACBB235626A18B5100C2AA21 /* NASAMeteorsRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */,
+				ACBB23BB26A1A84700C2AA21 /* MockData.json */,
+				ACBB235926A18B5100C2AA21 /* Info.plist */,
+			);
+			path = NASAMeteorsRecordTests;
+			sourceTree = "<group>";
+		};
+		ACBB236126A18B5100C2AA21 /* NASAMeteorsRecordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */,
+				ACBB236426A18B5100C2AA21 /* Info.plist */,
+			);
+			path = NASAMeteorsRecordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB236726A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecord" */;
+			buildPhases = (
+				ACBB233926A18B4F00C2AA21 /* Sources */,
+				ACBB233A26A18B4F00C2AA21 /* Frameworks */,
+				ACBB233B26A18B4F00C2AA21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NASAMeteorsRecord;
+			productName = NASAMeteorsRecord;
+			productReference = ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBB235226A18B5100C2AA21 /* NASAMeteorsRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB236A26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordTests" */;
+			buildPhases = (
+				ACBB234F26A18B5100C2AA21 /* Sources */,
+				ACBB235026A18B5100C2AA21 /* Frameworks */,
+				ACBB235126A18B5100C2AA21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBB235526A18B5100C2AA21 /* PBXTargetDependency */,
+			);
+			name = NASAMeteorsRecordTests;
+			productName = NASAMeteorsRecordTests;
+			productReference = ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBB235D26A18B5100C2AA21 /* NASAMeteorsRecordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBB236D26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordUITests" */;
+			buildPhases = (
+				ACBB235A26A18B5100C2AA21 /* Sources */,
+				ACBB235B26A18B5100C2AA21 /* Frameworks */,
+				ACBB235C26A18B5100C2AA21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBB236026A18B5100C2AA21 /* PBXTargetDependency */,
+			);
+			name = NASAMeteorsRecordUITests;
+			productName = NASAMeteorsRecordUITests;
+			productReference = ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBB233526A18B4F00C2AA21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ACBB233C26A18B4F00C2AA21 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					ACBB235226A18B5100C2AA21 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ACBB233C26A18B4F00C2AA21;
+					};
+					ACBB235D26A18B5100C2AA21 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ACBB233C26A18B4F00C2AA21;
+					};
+				};
+			};
+			buildConfigurationList = ACBB233826A18B4F00C2AA21 /* Build configuration list for PBXProject "NASAMeteorsRecord" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBB233426A18B4F00C2AA21;
+			productRefGroup = ACBB233E26A18B5000C2AA21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */,
+				ACBB235226A18B5100C2AA21 /* NASAMeteorsRecordTests */,
+				ACBB235D26A18B5100C2AA21 /* NASAMeteorsRecordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBB233B26A18B4F00C2AA21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB234D26A18B5100C2AA21 /* LaunchScreen.storyboard in Resources */,
+				ACBB234A26A18B5100C2AA21 /* Assets.xcassets in Resources */,
+				ACBB234826A18B5000C2AA21 /* Main.storyboard in Resources */,
+				ACF0B6D926A1B5FA009FD283 /* MapViewController.xib in Resources */,
+				ACF0B6E326A1C304009FD283 /* FilterViewController.xib in Resources */,
+				ACBB239926A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB235126A18B5100C2AA21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB239A26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */,
+				ACBB23BC26A1A84700C2AA21 /* MockData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB235C26A18B5100C2AA21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB239B26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBB233926A18B4F00C2AA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB234526A18B5000C2AA21 /* HomeViewController.swift in Sources */,
+				ACBB23A726A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
+				ACBB237E26A18DD200C2AA21 /* NetworkService.swift in Sources */,
+				ACF0B6D826A1B5FA009FD283 /* MapViewController.swift in Sources */,
+				ACF0B6EB26A1C985009FD283 /* FilterAndSortSystem.swift in Sources */,
+				ACF0B6E226A1C304009FD283 /* FilterViewController.swift in Sources */,
+				ACF0B6F326A1CD95009FD283 /* NotificationExtension.swift in Sources */,
+				ACBB239626A196BF00C2AA21 /* MeteorTableViewCell.swift in Sources */,
+				ACBB23B526A1A1BC00C2AA21 /* DateExtension.swift in Sources */,
+				ACBB234126A18B5000C2AA21 /* AppDelegate.swift in Sources */,
+				ACBB23A026A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
+				ACBB238526A18F6200C2AA21 /* MeteorModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB234F26A18B5100C2AA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB237F26A18DD200C2AA21 /* NetworkService.swift in Sources */,
+				ACBB23A126A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
+				ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */,
+				ACBB235826A18B5100C2AA21 /* NASAMeteorsRecordTests.swift in Sources */,
+				ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB235A26A18B5100C2AA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBB238026A18DD200C2AA21 /* NetworkService.swift in Sources */,
+				ACBB23A226A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
+				ACBB238726A18F6200C2AA21 /* MeteorModel.swift in Sources */,
+				ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */,
+				ACBB23A926A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBB235526A18B5100C2AA21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */;
+			targetProxy = ACBB235426A18B5100C2AA21 /* PBXContainerItemProxy */;
+		};
+		ACBB236026A18B5100C2AA21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */;
+			targetProxy = ACBB235F26A18B5100C2AA21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBB234626A18B5000C2AA21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBB234726A18B5000C2AA21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBB234C26A18B5100C2AA21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBB236526A18B5100C2AA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBB236626A18B5100C2AA21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBB236826A18B5100C2AA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.NASAMeteorsRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBB236926A18B5100C2AA21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.NASAMeteorsRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBB236B26A18B5100C2AA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASAMeteorsRecord.app/NASAMeteorsRecord";
+			};
+			name = Debug;
+		};
+		ACBB236C26A18B5100C2AA21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASAMeteorsRecord.app/NASAMeteorsRecord";
+			};
+			name = Release;
+		};
+		ACBB236E26A18B5100C2AA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NASAMeteorsRecord;
+			};
+			name = Debug;
+		};
+		ACBB236F26A18B5100C2AA21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y833H6V839;
+				INFOPLIST_FILE = NASAMeteorsRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NASAMeteorsRecord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBB233826A18B4F00C2AA21 /* Build configuration list for PBXProject "NASAMeteorsRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB236526A18B5100C2AA21 /* Debug */,
+				ACBB236626A18B5100C2AA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB236726A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB236826A18B5100C2AA21 /* Debug */,
+				ACBB236926A18B5100C2AA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB236A26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB236B26A18B5100C2AA21 /* Debug */,
+				ACBB236C26A18B5100C2AA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBB236D26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBB236E26A18B5100C2AA21 /* Debug */,
+				ACBB236F26A18B5100C2AA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBB233526A18B4F00C2AA21 /* Project object */;
+}
