@@ -55,4 +55,11 @@ class MockData {
             return nil
         }
     }
+
+    func getMeteorsViewModels() -> [MeteorViewModel]? {
+
+       let vms = getModels()?.map {return MeteorViewModel(model: $0)} ?? []
+
+        return vms
+    }
 }

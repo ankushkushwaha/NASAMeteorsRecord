@@ -15,6 +15,8 @@
 		AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */; };
 		AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */; };
 		AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DB726A207310037A521 /* UserDefaultsManager.swift */; };
+		AC085DF326A2DFCD0037A521 /* FilterAndSortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DF226A2DFCD0037A521 /* FilterAndSortingTests.swift */; };
+		AC085DF726A2E10C0037A521 /* FilterAndSortSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6EA26A1C985009FD283 /* FilterAndSortSystem.swift */; };
 		ACBB234126A18B5000C2AA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234026A18B5000C2AA21 /* AppDelegate.swift */; };
 		ACBB234526A18B5000C2AA21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234426A18B5000C2AA21 /* HomeViewController.swift */; };
 		ACBB234826A18B5000C2AA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234626A18B5000C2AA21 /* Main.storyboard */; };
@@ -70,6 +72,7 @@
 		AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAndResponseTests.swift; sourceTree = "<group>"; };
 		AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFeatureTests.swift; sourceTree = "<group>"; };
 		AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataFetchingTests.swift; sourceTree = "<group>"; };
+		AC085DF226A2DFCD0037A521 /* FilterAndSortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAndSortingTests.swift; sourceTree = "<group>"; };
 		ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAMeteorsRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB234026A18B5000C2AA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBB234426A18B5000C2AA21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +212,7 @@
 				AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */,
 				ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */,
 				AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */,
+				AC085DF226A2DFCD0037A521 /* FilterAndSortingTests.swift */,
 				AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */,
 				ACBB23BB26A1A84700C2AA21 /* MockData.json */,
 				ACBB235926A18B5100C2AA21 /* Info.plist */,
@@ -385,9 +389,11 @@
 				AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */,
 				AC085DC426A2C6F90037A521 /* DateExtension.swift in Sources */,
 				ACBB23A126A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
+				AC085DF326A2DFCD0037A521 /* FilterAndSortingTests.swift in Sources */,
 				AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */,
 				ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */,
 				ACBB235826A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift in Sources */,
+				AC085DF726A2E10C0037A521 /* FilterAndSortSystem.swift in Sources */,
 				AC085DD426A2CDE40037A521 /* NetworkAndResponseTests.swift in Sources */,
 				AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */,
 				ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
