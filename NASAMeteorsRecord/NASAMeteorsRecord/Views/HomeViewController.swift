@@ -174,6 +174,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 self.present(alert, animated: true, completion: nil)
             }
 
+            tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+
         }
     }
 }
