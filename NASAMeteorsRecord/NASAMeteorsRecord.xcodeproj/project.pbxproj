@@ -11,7 +11,7 @@
 		AC085DC426A2C6F90037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
 		AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */; };
 		AC085DCF26A2C7200037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
-		AC085DD426A2CDE40037A521 /* NerworkAndResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */; };
+		AC085DD426A2CDE40037A521 /* NetworkAndResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */; };
 		AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */; };
 		AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */; };
 		AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DB726A207310037A521 /* UserDefaultsManager.swift */; };
@@ -67,7 +67,7 @@
 
 /* Begin PBXFileReference section */
 		AC085DB726A207310037A521 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
-		AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerworkAndResponseTests.swift; sourceTree = "<group>"; };
+		AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAndResponseTests.swift; sourceTree = "<group>"; };
 		AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFeatureTests.swift; sourceTree = "<group>"; };
 		AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataFetchingTests.swift; sourceTree = "<group>"; };
 		ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAMeteorsRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +208,7 @@
 			children = (
 				AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */,
 				ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */,
-				AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */,
+				AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */,
 				AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */,
 				ACBB23BB26A1A84700C2AA21 /* MockData.json */,
 				ACBB235926A18B5100C2AA21 /* Info.plist */,
@@ -388,7 +388,7 @@
 				AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */,
 				ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */,
 				ACBB235826A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift in Sources */,
-				AC085DD426A2CDE40037A521 /* NerworkAndResponseTests.swift in Sources */,
+				AC085DD426A2CDE40037A521 /* NetworkAndResponseTests.swift in Sources */,
 				AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */,
 				ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
 				AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */,
