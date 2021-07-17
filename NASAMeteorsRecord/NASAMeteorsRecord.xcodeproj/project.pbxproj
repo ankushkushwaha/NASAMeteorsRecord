@@ -130,6 +130,7 @@
 		AC8A784626A1E5FE00C6F507 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */,
 				ACBB238426A18F6200C2AA21 /* MeteorModel.swift */,
 			);
 			path = Models;
@@ -197,7 +198,6 @@
 				AC8A784626A1E5FE00C6F507 /* Models */,
 				ACBB234026A18B5000C2AA21 /* AppDelegate.swift */,
 				ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */,
-				ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */,
 				AC8A784926A1E67D00C6F507 /* Extensions */,
 				ACBB234926A18B5100C2AA21 /* Assets.xcassets */,
 				ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */,
