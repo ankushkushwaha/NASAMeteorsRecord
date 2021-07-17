@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		AC085DB826A207310037A521 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DB726A207310037A521 /* UserDefaultsManager.swift */; };
+		AC085DC426A2C6F90037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
+		AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */; };
+		AC085DCF26A2C7200037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
+		AC085DD426A2CDE40037A521 /* NerworkAndResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */; };
+		AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */; };
+		AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */; };
+		AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DB726A207310037A521 /* UserDefaultsManager.swift */; };
 		ACBB234126A18B5000C2AA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234026A18B5000C2AA21 /* AppDelegate.swift */; };
 		ACBB234526A18B5000C2AA21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB234426A18B5000C2AA21 /* HomeViewController.swift */; };
 		ACBB234826A18B5000C2AA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234626A18B5000C2AA21 /* Main.storyboard */; };
 		ACBB234A26A18B5100C2AA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234926A18B5100C2AA21 /* Assets.xcassets */; };
 		ACBB234D26A18B5100C2AA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */; };
-		ACBB235826A18B5100C2AA21 /* NASAMeteorsRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */; };
+		ACBB235826A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */; };
 		ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */; };
 		ACBB237E26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
 		ACBB237F26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
@@ -60,6 +67,9 @@
 
 /* Begin PBXFileReference section */
 		AC085DB726A207310037A521 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerworkAndResponseTests.swift; sourceTree = "<group>"; };
+		AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFeatureTests.swift; sourceTree = "<group>"; };
+		AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataFetchingTests.swift; sourceTree = "<group>"; };
 		ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAMeteorsRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB234026A18B5000C2AA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBB234426A18B5000C2AA21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +78,7 @@
 		ACBB234C26A18B5100C2AA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACBB234E26A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsRecordTests.swift; sourceTree = "<group>"; };
+		ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsModelPasringTests.swift; sourceTree = "<group>"; };
 		ACBB235926A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsRecordUITests.swift; sourceTree = "<group>"; };
@@ -196,7 +206,10 @@
 		ACBB235626A18B5100C2AA21 /* NASAMeteorsRecordTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACBB235726A18B5100C2AA21 /* NASAMeteorsRecordTests.swift */,
+				AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */,
+				ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */,
+				AC085DD326A2CDE40037A521 /* NerworkAndResponseTests.swift */,
+				AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */,
 				ACBB23BB26A1A84700C2AA21 /* MockData.json */,
 				ACBB235926A18B5100C2AA21 /* Info.plist */,
 			);
@@ -369,10 +382,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBB237F26A18DD200C2AA21 /* NetworkService.swift in Sources */,
+				AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */,
+				AC085DC426A2C6F90037A521 /* DateExtension.swift in Sources */,
 				ACBB23A126A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
+				AC085DEB26A2D48F0037A521 /* UserDefaultsManager.swift in Sources */,
 				ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */,
-				ACBB235826A18B5100C2AA21 /* NASAMeteorsRecordTests.swift in Sources */,
+				ACBB235826A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift in Sources */,
+				AC085DD426A2CDE40037A521 /* NerworkAndResponseTests.swift in Sources */,
+				AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */,
 				ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
+				AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBB238026A18DD200C2AA21 /* NetworkService.swift in Sources */,
+				AC085DCF26A2C7200037A521 /* DateExtension.swift in Sources */,
 				ACBB23A226A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
 				ACBB238726A18F6200C2AA21 /* MeteorModel.swift in Sources */,
 				ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */,
