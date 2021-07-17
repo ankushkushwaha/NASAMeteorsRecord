@@ -13,24 +13,33 @@ struct UserDefaultsManager {
         static let favourites = "favourites"
     }
 
+    private let userDefaultInstance: UserDefaults!
+
+    // dependancy injection for testing purpose
+    init(userDefault: UserDefaults = UserDefaults.standard) {
+
+        userDefaultInstance = userDefault
+    }
+
     func setFavourite (id: String) {
 
         if var savedIds = getFavourites(),
-           savedIds.count > 0 {
+           savedIds.count > 0,
+           !savedIds.contains(id) {
 
             savedIds.append(id)
-            UserDefaults.standard.setValue(savedIds, forKey: UserDefaultKey.favourites)
+            userDefaultInstance.setValue(savedIds, forKey: UserDefaultKey.favourites)
 
         } else {
             // first favourite item
 
-            UserDefaults.standard.setValue([id], forKey: UserDefaultKey.favourites)
+            userDefaultInstance.setValue([id], forKey: UserDefaultKey.favourites)
         }
     }
 
     func getFavourites() -> [String]? {
 
-        let ids = UserDefaults.standard.value(forKey: UserDefaultKey.favourites) as? [String]
+        let ids = userDefaultInstance.value(forKey: UserDefaultKey.favourites) as? [String]
 
         return ids
     }
@@ -42,7 +51,7 @@ struct UserDefaultsManager {
             
             savedIds.removeAll{$0 == id}
 
-            UserDefaults.standard.setValue(savedIds, forKey: UserDefaultKey.favourites)
+            userDefaultInstance.setValue(savedIds, forKey: UserDefaultKey.favourites)
 
         }
     }
