@@ -84,6 +84,7 @@ class HomeViewController: UIViewController {
 
     }
 
+    //Call this methos instead if tableview->reloadData(), so that all current selected filters can be applied
     private func refreshTableViewUI() {
 
         guard let sortType = filterSystem.currentFilterType else {
