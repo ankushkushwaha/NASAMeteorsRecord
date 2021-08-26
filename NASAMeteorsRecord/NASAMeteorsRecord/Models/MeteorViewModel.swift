@@ -18,7 +18,12 @@ struct MeteorViewModel {
 
     // Dependancy Injection
 
-    init(model: MeteorModel) {
+    init?(model: MeteorModel?) {
+
+        guard let model = model else {
+            return nil
+        }
+        
         id = model.id
         name = model.name
         mass = model.mass

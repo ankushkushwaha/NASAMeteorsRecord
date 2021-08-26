@@ -75,7 +75,7 @@ class HomeViewController: UIViewController {
                 } else if let array = meteorModelArray,
                           array.count > 0 {
 
-                    self?.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
+                    self?.allMeteorsViewModel = meteorModelArray?.compactMap {return MeteorViewModel(model: $0)} ?? []
 
                     self?.refreshTableViewUI()
 
