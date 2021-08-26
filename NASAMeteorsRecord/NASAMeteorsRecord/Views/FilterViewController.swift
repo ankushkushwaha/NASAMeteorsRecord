@@ -29,11 +29,6 @@ class FilterViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "FilterTableViewCell")
 
     }
-
-    deinit {
-        print("deinit FilterViewController")
-    }
-
 }
 
 
