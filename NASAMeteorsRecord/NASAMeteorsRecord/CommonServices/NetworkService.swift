@@ -43,8 +43,26 @@ class NetworkService {
 }
 
 
-public enum AppErrors: Error {
+enum AppErrors: Error {
+
     case urlInvalid
 
-    // add more errors here
+    // add more errors here...
+
+    // Throw in all other cases
+    case unexpected(code: Int)
+}
+
+
+extension AppErrors: CustomStringConvertible {
+
+    public var description: String {
+        switch self {
+        case .urlInvalid:
+            return "The provided url is not valid."
+
+        case .unexpected(_):
+            return "An unexpected error occurred."
+        }
+    }
 }

@@ -59,13 +59,34 @@ class HomeViewController: UIViewController {
 
         NetworkService().fetchMeteorsData { [weak self] (meteorModelArray, error) in
 
-            self?.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
-
             DispatchQueue.main.async {
 
-                self?.refreshTableViewUI()
+                if let error = error {
 
-                self?.refreshControl.endRefreshing()
+                    var text = error.localizedDescription
+
+                    if let error = error as? AppErrors {
+                        text = error.description
+                    }
+                    let alert = UIAlertController(title: "", message: text, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+
+                } else if let array = meteorModelArray,
+                          array.count > 0 {
+
+                    self?.allMeteorsViewModel = meteorModelArray?.map {return MeteorViewModel(model: $0)} ?? []
+
+                    self?.refreshTableViewUI()
+
+                    self?.refreshControl.endRefreshing()
+
+                } else {
+
+                    let alert = UIAlertController(title: "", message: "No meteors available.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -117,12 +138,9 @@ class HomeViewController: UIViewController {
         let vms = viewModels.map { viewmodel -> MeteorViewModel in
 
             var mutableVM = viewmodel
-            if favouriteIds.contains(mutableVM.id) {
 
-                mutableVM.isFavourite = true
-            } else {
-                mutableVM.isFavourite = false
-            }
+            mutableVM.isFavourite = favouriteIds.contains(mutableVM.id)
+
             return mutableVM
         }
 
@@ -182,7 +200,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 
 extension HomeViewController: MeteorTableViewCellDelegate {
-
+    
     func favouriteButtonClicked(model: MeteorViewModel) {
 
         if model.isFavourite {
