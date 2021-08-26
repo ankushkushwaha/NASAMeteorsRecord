@@ -39,11 +39,6 @@ class MeteorTableViewCell: UITableViewCell {
         delegate?.favouriteButtonClicked(model: model)
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     static func nibName() -> String {
         return String(describing:self)
     }
