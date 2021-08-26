@@ -10,7 +10,6 @@
 		AC085DB826A207310037A521 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DB726A207310037A521 /* UserDefaultsManager.swift */; };
 		AC085DC426A2C6F90037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
 		AC085DC826A2C6FE0037A521 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6F226A1CD95009FD283 /* NotificationExtension.swift */; };
-		AC085DCF26A2C7200037A521 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
 		AC085DD426A2CDE40037A521 /* NetworkAndResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DD326A2CDE40037A521 /* NetworkAndResponseTests.swift */; };
 		AC085DDC26A2D15F0037A521 /* FavouriteFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DDB26A2D15F0037A521 /* FavouriteFeatureTests.swift */; };
 		AC085DE126A2D2C20037A521 /* MockDataFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC085DE026A2D2C20037A521 /* MockDataFetchingTests.swift */; };
@@ -23,23 +22,17 @@
 		ACBB234A26A18B5100C2AA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234926A18B5100C2AA21 /* Assets.xcassets */; };
 		ACBB234D26A18B5100C2AA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBB234B26A18B5100C2AA21 /* LaunchScreen.storyboard */; };
 		ACBB235826A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */; };
-		ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */; };
 		ACBB237E26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
 		ACBB237F26A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
-		ACBB238026A18DD200C2AA21 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB237D26A18DD200C2AA21 /* NetworkService.swift */; };
 		ACBB238526A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
 		ACBB238626A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
-		ACBB238726A18F6200C2AA21 /* MeteorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB238426A18F6200C2AA21 /* MeteorModel.swift */; };
 		ACBB239626A196BF00C2AA21 /* MeteorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239426A196BF00C2AA21 /* MeteorTableViewCell.swift */; };
 		ACBB239926A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
 		ACBB239A26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
-		ACBB239B26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACBB239526A196BF00C2AA21 /* MeteorTableViewCell.xib */; };
 		ACBB23A026A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
 		ACBB23A126A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
-		ACBB23A226A198A200C2AA21 /* MeteorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB239F26A198A200C2AA21 /* MeteorViewModel.swift */; };
 		ACBB23A726A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
 		ACBB23A826A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
-		ACBB23A926A19E1300C2AA21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23A626A19E1300C2AA21 /* SceneDelegate.swift */; };
 		ACBB23B526A1A1BC00C2AA21 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB23B426A1A1BC00C2AA21 /* DateExtension.swift */; };
 		ACBB23BC26A1A84700C2AA21 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = ACBB23BB26A1A84700C2AA21 /* MockData.json */; };
 		ACF0B6D826A1B5FA009FD283 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B6D626A1B5FA009FD283 /* MapViewController.swift */; };
@@ -52,13 +45,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		ACBB235426A18B5100C2AA21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACBB233526A18B4F00C2AA21 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACBB233C26A18B4F00C2AA21;
-			remoteInfo = NASAMeteorsRecord;
-		};
-		ACBB235F26A18B5100C2AA21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ACBB233526A18B4F00C2AA21 /* Project object */;
 			proxyType = 1;
@@ -83,9 +69,6 @@
 		ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBB235726A18B5100C2AA21 /* NASAMeteorsModelPasringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsModelPasringTests.swift; sourceTree = "<group>"; };
 		ACBB235926A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAMeteorsRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAMeteorsRecordUITests.swift; sourceTree = "<group>"; };
-		ACBB236426A18B5100C2AA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBB237D26A18DD200C2AA21 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		ACBB238426A18F6200C2AA21 /* MeteorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorModel.swift; sourceTree = "<group>"; };
 		ACBB239426A196BF00C2AA21 /* MeteorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,13 +94,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ACBB235026A18B5100C2AA21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBB235B26A18B5100C2AA21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,7 +151,6 @@
 			children = (
 				ACBB233F26A18B5000C2AA21 /* NASAMeteorsRecord */,
 				ACBB235626A18B5100C2AA21 /* NASAMeteorsRecordTests */,
-				ACBB236126A18B5100C2AA21 /* NASAMeteorsRecordUITests */,
 				ACBB233E26A18B5000C2AA21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -185,7 +160,6 @@
 			children = (
 				ACBB233D26A18B4F00C2AA21 /* NASAMeteorsRecord.app */,
 				ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */,
-				ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,15 +192,6 @@
 				ACBB235926A18B5100C2AA21 /* Info.plist */,
 			);
 			path = NASAMeteorsRecordTests;
-			sourceTree = "<group>";
-		};
-		ACBB236126A18B5100C2AA21 /* NASAMeteorsRecordUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ACBB236226A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift */,
-				ACBB236426A18B5100C2AA21 /* Info.plist */,
-			);
-			path = NASAMeteorsRecordUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,24 +232,6 @@
 			productReference = ACBB235326A18B5100C2AA21 /* NASAMeteorsRecordTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ACBB235D26A18B5100C2AA21 /* NASAMeteorsRecordUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACBB236D26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordUITests" */;
-			buildPhases = (
-				ACBB235A26A18B5100C2AA21 /* Sources */,
-				ACBB235B26A18B5100C2AA21 /* Frameworks */,
-				ACBB235C26A18B5100C2AA21 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACBB236026A18B5100C2AA21 /* PBXTargetDependency */,
-			);
-			name = NASAMeteorsRecordUITests;
-			productName = NASAMeteorsRecordUITests;
-			productReference = ACBB235E26A18B5100C2AA21 /* NASAMeteorsRecordUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,10 +245,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					ACBB235226A18B5100C2AA21 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = ACBB233C26A18B4F00C2AA21;
-					};
-					ACBB235D26A18B5100C2AA21 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = ACBB233C26A18B4F00C2AA21;
 					};
@@ -322,7 +265,6 @@
 			targets = (
 				ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */,
 				ACBB235226A18B5100C2AA21 /* NASAMeteorsRecordTests */,
-				ACBB235D26A18B5100C2AA21 /* NASAMeteorsRecordUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,14 +289,6 @@
 			files = (
 				ACBB239A26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */,
 				ACBB23BC26A1A84700C2AA21 /* MockData.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBB235C26A18B5100C2AA21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACBB239B26A196BF00C2AA21 /* MeteorTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,19 +335,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACBB235A26A18B5100C2AA21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACBB238026A18DD200C2AA21 /* NetworkService.swift in Sources */,
-				AC085DCF26A2C7200037A521 /* DateExtension.swift in Sources */,
-				ACBB23A226A198A200C2AA21 /* MeteorViewModel.swift in Sources */,
-				ACBB238726A18F6200C2AA21 /* MeteorModel.swift in Sources */,
-				ACBB236326A18B5100C2AA21 /* NASAMeteorsRecordUITests.swift in Sources */,
-				ACBB23A926A19E1300C2AA21 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -421,11 +342,6 @@
 			isa = PBXTargetDependency;
 			target = ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */;
 			targetProxy = ACBB235426A18B5100C2AA21 /* PBXContainerItemProxy */;
-		};
-		ACBB236026A18B5100C2AA21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACBB233C26A18B4F00C2AA21 /* NASAMeteorsRecord */;
-			targetProxy = ACBB235F26A18B5100C2AA21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -647,46 +563,6 @@
 			};
 			name = Release;
 		};
-		ACBB236E26A18B5100C2AA21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y833H6V839;
-				INFOPLIST_FILE = NASAMeteorsRecordUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NASAMeteorsRecord;
-			};
-			name = Debug;
-		};
-		ACBB236F26A18B5100C2AA21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y833H6V839;
-				INFOPLIST_FILE = NASAMeteorsRecordUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ankush.NASAMeteorsRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NASAMeteorsRecord;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -713,15 +589,6 @@
 			buildConfigurations = (
 				ACBB236B26A18B5100C2AA21 /* Debug */,
 				ACBB236C26A18B5100C2AA21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACBB236D26A18B5100C2AA21 /* Build configuration list for PBXNativeTarget "NASAMeteorsRecordUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACBB236E26A18B5100C2AA21 /* Debug */,
-				ACBB236F26A18B5100C2AA21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
